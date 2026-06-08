@@ -14,9 +14,11 @@ public class Usuari
     [NotNull]
     public string Password { get; set; }
 
-    // Útil para mostrar el usuario en la consola de depuración de Unity.
+    // Saldo del jugador. Valor inicial 100 asignado en RegisterUser.
+    public float Diners { get; set; }
+
     public override string ToString()
     {
-        return string.Format("[Usuari: UserID={0}, Username={1}]", UserID, Username);
+        return string.Format("[Usuari: UserID={0}, Username={1}, Diners={2}]", UserID, Username, Diners);
     }
 }

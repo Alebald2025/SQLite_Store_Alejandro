@@ -15,8 +15,11 @@ public class Item
     [NotNull]
     public int MaxStack { get; set; }
 
+    // Precio de compra. Precio de venta = Preu / 2.
+    public float Preu { get; set; }
+
     public override string ToString()
     {
-        return string.Format("[Item: ID={0}, Nombre={1}, MaxStack={2}]", ID, Nombre, MaxStack);
+        return string.Format("[Item: ID={0}, Nombre={1}, MaxStack={2}, Preu={3}]", ID, Nombre, MaxStack, Preu);
     }
 }
